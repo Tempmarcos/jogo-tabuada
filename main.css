@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: red;
+    animation: animation 5s infinite ease-in-out;
+    height: 100vh;
+    display: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+@keyframes animation {
+    0% {background-color: red;}
+    25% {background-color: blueviolet;}
+    50% {background-color: blue;}
+    75% {background-color: greenyellow}
+    100% {background-color: red;}
+}
+
+.jogo {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.jogo p {
+    font-size: 3em;
+    margin-inline: 8px;
+}
+
+#acertos {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
