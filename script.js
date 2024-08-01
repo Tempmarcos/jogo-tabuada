@@ -20,15 +20,24 @@ function tentarResposta(){
  if(parseInt(inputResultado.value) != resultado) {
     numeroAcertos = 0;
     inputResultado.value = '';
-    alert('ERROU!');
+    alert(`ERROU! A resposta é: ${resultado}`);
     jogo();
+   //  inputResultado.focus();
  } else {
     numeroAcertos++;
     inputResultado.value = '';
     jogo();
+   //  inputResultado.focus();
     // alert('acertou!');
  }
 }
+
+// element.focus();
+//     element.onblur= function() {
+//         setTimeout(function() {
+//             element.focus();
+//         }, 0);
+//     };
 
 botaoEnviar.addEventListener('click', tentarResposta);
 
